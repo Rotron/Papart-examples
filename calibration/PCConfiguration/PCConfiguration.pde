@@ -61,6 +61,10 @@ void setup(){
     testView = new TestView();
 }
 
+public void dispose(){
+    testView.dispose();
+    super.dispose();
+}
 
 int cameraWidth, cameraHeight;
 int projectorWidth, projectorHeight;
@@ -245,6 +249,7 @@ public void copy(File src, File dst) throws IOException {
 
 void saveDefaultCamera(){
     saveCamera(Papart.cameraConfig);
+    saveCamera("camera-config.xml");
 }
 
 void saveCamera(String fileName){
@@ -287,6 +292,7 @@ void fileSelectedSaveDepthCamera(File selection) {
 
 void saveDefaultDepthCamera(){
     saveDepthCamera(Papart.depthCameraConfig);
+    saveDepthCamera("depth-camera-config.xml");
 }
 
 void saveDepthCamera(String fileName){
