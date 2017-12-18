@@ -11,6 +11,8 @@ import org.bytedeco.javacv.RealSenseFrameGrabber;
 import toxi.geom.*;
 import peasy.*;
 
+import org.openni.*;
+
 
 PeasyCam cam;
 
@@ -23,7 +25,7 @@ DepthCameraDevice depthCameraDevice;
 CameraRealSense camRS = null;
 
 // Warning non-even skip value causes a crash.
-int skip = 2;
+int skip = 1;
 
 void settings() {
     size(640, 480, P3D);
@@ -75,6 +77,7 @@ void draw() {
 
   try{
   kinectAnalysis.update(depthImg, colorImg, skip);
+
   }catch(Exception e){
 
       e.printStackTrace();

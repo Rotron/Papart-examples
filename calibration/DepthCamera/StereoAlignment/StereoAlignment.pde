@@ -18,6 +18,8 @@ import tech.lity.rea.skatolo.events.*;
 import tech.lity.rea.skatolo.gui.controllers.*;
 import tech.lity.rea.skatolo.gui.widgets.*;
 
+import org.openni.*;
+
 
 PeasyCam cam;
 

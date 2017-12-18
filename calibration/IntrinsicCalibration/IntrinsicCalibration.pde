@@ -5,6 +5,7 @@ import org.bytedeco.javacpp.*;
 import TUIO.*;
 import toxi.geom.*;
 
+import org.openni.*;
 
 Papart papart;
 // ProjectorDisplay ardisplay;
@@ -13,7 +14,7 @@ ARDisplay ardisplay;
 float focal, cx, cy;
 PMatrix3D projIntrinsics;
 
-boolean useProjector = true;
+boolean useProjector = false;
 float distancePaper = 600f;  // in millimeter.
 
 PApplet parent;
@@ -116,7 +117,7 @@ void draw() {
 
     ardisplay.endDraw();
 
-    if(!useProjector)
+    if(!useProjector){
 	image(papart.getCameraTracking().getImage(), 0, 0, width, height);
 
     DrawUtils.drawImage((PGraphicsOpenGL) g,

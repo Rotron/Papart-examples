@@ -24,7 +24,7 @@ import tech.lity.rea.skatolo.*;
 import tech.lity.rea.skatolo.events.*;
 import tech.lity.rea.skatolo.gui.controllers.*;
 import tech.lity.rea.skatolo.gui.group.*;
-
+import org.openni.*;
 import peasy.*;
 
 Skatolo skatolo;

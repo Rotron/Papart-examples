@@ -4,9 +4,11 @@ import tech.lity.rea.svgextended.*;
 
 import org.reflections.*;
 import toxi.geom.*;
-import processing.video.*;
 
+// Camera drivers
+import processing.video.*;
 import org.bytedeco.javacv.*;
+import org.openni.*;
 
 Papart papart;
 
