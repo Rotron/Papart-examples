@@ -18,8 +18,8 @@ void settings(){
 }
 
  void setup(){
-     //      papart = Papart.seeThrough(this);
-     papart = Papart.projection(this);
+     papart = Papart.seeThrough(this);
+     //     papart = Papart.projection(this);
      papart.loadTouchInput();
      papart.loadSketches();
      papart.startTracking();
